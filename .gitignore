@@ -1,0 +1,13 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment directories
+myenv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment-specific configurations
+.env
