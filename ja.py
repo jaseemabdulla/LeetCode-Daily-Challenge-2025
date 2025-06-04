@@ -1,14 +1,17 @@
-def numOfSubarrays(arr):
-    res = 0
-    odd = 0
-    even = 0
-    csum = 0
-    for num in arr:
-        csum += num
-        if csum % 2:
-            res += 1 + even
-            odd += 1
-        else:
-            res += odd
-            even += 1
-    return res % (10**9 + 7)
+arr = [1,2,34,3,4,5,7,23,12]
+
+c = 0
+def f(arr):
+    c = 0
+    for i in arr:
+        if i % 2 != 0:
+            c += 1
+        elif i % 2 == 1:
+            c = 0
+        if c == 3:
+            return True 
+    return False
+
+print(f(arr))
+    
+  
